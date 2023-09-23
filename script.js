@@ -8,24 +8,23 @@ input.addEventListener("keyup",function(event){
     }
 })
 let additem = (input) =>{
+   
     let listitem = document.createElement("li");
     listitem.innerHTML = `${input}<i>X</i>`;
-    if(input.value.length == 0)
-    {
-        listitem.appendChild(lisitem)==false;
-    }
     listitem.querySelector("i").style.fontSize = "1.3rem";
     listitem.querySelector("i").style.textAlign = "centre";
     listitem.querySelector("i").style.color = "white";
     listitem.querySelector("i").style.fontStyle = "nomral";
     listitem.querySelector("i").style.fontFamily = "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
-    list.appendChild(listitem);
     listitem.addEventListener("click",function(){
         this.classList.toggle("done");
     })
     listitem.querySelector("i").addEventListener("click",function(){
         listitem.remove();
     })
+    if(`${input}`.length!=0){
+    list.appendChild(listitem);
+}
 }
 document.getElementById("two").addEventListener("click",function(){
     let listitem = document.createElement("li");
