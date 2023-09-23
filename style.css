@@ -1,0 +1,163 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: azure;
+}
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    background-color: azure;
+}
+.navtext
+{
+    width: 150px;
+    height: 60px;
+    margin: 0;
+}
+.text{
+    position: absolute;
+    left: 43%;
+    top: 1%;
+    font-size: 4rem;
+    color: lightgray;
+}
+.box
+{   position: absolute;
+    left: 30%;
+    top: 25%;
+    width: 670px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+   
+    
+}
+#list
+{   position: absolute;
+    top: 120%;
+    width: 250px;
+    height: 320px;
+    overflow-y: auto;
+}
+::-webkit-scrollbar
+{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track
+{
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+}
+::-webkit-scrollbar-thumb
+{
+    background:black;
+}
+.options
+{
+    position: absolute;
+    left: 35%;
+    top: 7%;
+  
+   
+}
+.one
+{
+    width: 210px;
+    height: 35px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    position: relative;
+    right: 15%;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    text-align: center;
+   
+}
+.two
+{
+    width: 105px;
+    height: 35px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    left: 84%;
+    background-color: lightgreen;
+    border: none;
+    border: 2px solid black;
+}
+.options li{
+    width: 210px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    padding: 0;
+    text-align: center;
+    font-size: 1.7rem;
+    height: fit-content;
+    background-color: white;
+    border: 2px solid black;
+    list-style: none;
+    user-select: none;
+}
+.options li i{
+    position: absolute;
+    right: 2%;
+    margin-top: 2px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: lightskyblue;
+}
+.options li.done
+{
+    background-color: lightgreen;
+    text-decoration: line-through 2px solid red;
+}
+@media screen and (max-width:500px){
+.navbar
+{
+    width: 100%;
+    height: 80px;
+    background-color: azure;
+}
+.text{
+    margin-left: -46px;
+    width: 225px;
+    height: 70px;
+    font-size: 3rem;
+    color: lightgray;
+}
+.box
+{   position: absolute;
+    left: 2%;
+    right: 2%;
+    top: 15%;
+    width: 420px;
+    height: 600px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+   
+    
+}
+.options
+{
+    position: absolute;
+    left: 23%;
+    top: 7%;
+  
+   
+}
+#list
+{   position: absolute;
+    top: 120%;
+    width: 250px;
+    height: 490px;
+    overflow-y: auto;
+}
+}
